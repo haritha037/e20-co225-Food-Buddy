@@ -66,7 +66,9 @@ class ShopInfo extends StatelessWidget {
                             iconColor: AppColors.iconColorYellow,
                             iconSize: 36 * Dimentions.hUnit),
                         SizedBox(width: 10 * Dimentions.hUnit),
-                        PhoneNumber(phoneNumber: shop.phoneNumber, size: 18),
+                        PhoneNumber(
+                            phoneNumber: shop.phoneNumber,
+                            size: 18 * Dimentions.hUnit),
                       ],
                     ),
 

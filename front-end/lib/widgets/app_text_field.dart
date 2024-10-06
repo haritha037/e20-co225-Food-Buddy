@@ -41,6 +41,9 @@ class AppTextField extends StatelessWidget {
         ],
       ),
       child: TextField(
+        style: TextStyle(
+          fontSize: 15 * Dimentions.hUnit, // Set the font size here
+        ),
         focusNode: focusNode,
         obscureText: isObscure,
         controller: controller,

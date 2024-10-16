@@ -15,6 +15,17 @@ class ProductCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    List<Color> bgColors = product.discountedPrice != 0
+        ? [
+            Color(0xFFf5cbd9),
+            Color(0xFFf4bccd),
+            Color(0xFFcacff9),
+          ]
+        : [
+            Color(0xFF9bf8f4),
+            Color(0xFF6f7bf7),
+          ];
+
     return GestureDetector(
       onTap: () {
         int productId = product.productId;
@@ -29,12 +40,8 @@ class ProductCard extends StatelessWidget {
         margin: EdgeInsets.symmetric(vertical: 10 * Dimentions.hUnit),
         decoration: BoxDecoration(
           //color: Colors.white.withOpacity(0.8),
-          gradient: const LinearGradient(
-            colors: [
-              Color(0xFFf5cbd9),
-              Color(0xFFf4bccd),
-              Color(0xFFcacff9),
-            ],
+          gradient: LinearGradient(
+            colors: bgColors,
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),

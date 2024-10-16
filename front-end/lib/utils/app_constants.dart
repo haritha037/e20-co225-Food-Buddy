@@ -3,11 +3,11 @@ class AppConstants {
   static const int APP_VERSION = 1;
 
   // static const String BASE_URL = "http://10.0.2.2:5000"; // emulator
-  static const String BASE_URL =
-      "http://Food-buddy-env.eba-upp3xrai.ap-south-1.elasticbeanstalk.com";
+  // static const String BASE_URL =
+  //     "http://Food-buddy-env.eba-upp3xrai.ap-south-1.elasticbeanstalk.com";
   // static const String BASE_URL =
   //     "http://foodbuddy.ap-south-1.elasticbeanstalk.com";
-  // static const String BASE_URL = "http://10.30.7.36:5000";
+  static const String BASE_URL = "http://192.168.1.5:5000";
 
   // shared preference keys
   static const String TOKEN = "token";
